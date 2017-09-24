@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.IdentityServer", "src\Sample.IdentityServer\Sample.IdentityServer.csproj", "{49CFCB65-0918-43A0-AA86-7425B4B76D1D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.IdentityServer.MongoDb", "src\Sample.IdentityServer.MongoDb\Sample.IdentityServer.MongoDb.csproj", "{E543CB69-178E-418E-BA16-B35E4A1EB975}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49CFCB65-0918-43A0-AA86-7425B4B76D1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49CFCB65-0918-43A0-AA86-7425B4B76D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49CFCB65-0918-43A0-AA86-7425B4B76D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49CFCB65-0918-43A0-AA86-7425B4B76D1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E543CB69-178E-418E-BA16-B35E4A1EB975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E543CB69-178E-418E-BA16-B35E4A1EB975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E543CB69-178E-418E-BA16-B35E4A1EB975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E543CB69-178E-418E-BA16-B35E4A1EB975}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F241F9E-8D2E-4E33-B6F0-CD81E36BEC5E}
+	EndGlobalSection
+EndGlobal
