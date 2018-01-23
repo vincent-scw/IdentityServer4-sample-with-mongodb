@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  db:
+    container_name: sample_mongo
+    image: mongo
+    volumes:
+      - ./mongo/init/:/docker-entrypoint-initdb.d/
+    environment:
+      - MONGO_INITDB_DATABASE=IdentityServer
+    networks:
+      - backend
+
+  sample.webapi:
+    image: sample.webapi
+    container_name: sample.webapi
+    build:
+      context: ./src/Sample.WebApi
+      dockerfile: Dockerfile
+
+  sample.identityserver:
+    image: sample.identityserver
+    container_name: sample.identityserver
+    build:
+      context: ./src/Sample.IdentityServer
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    links:
+      - db
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge

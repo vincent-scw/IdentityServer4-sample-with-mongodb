@@ -8,7 +8,8 @@ namespace Sample.IdentityServer
     {
         public static IEnumerable<Client> GetClients()
         {
-            return new List<Client> {
+            return new List<Client>
+            {
                 new Client
                 {
                     ClientId = "AngularSPA",
@@ -24,6 +25,17 @@ namespace Sample.IdentityServer
                         IdentityServerConstants.StandardScopes.Profile,
                         "WebApi",
                         "roles"
+                    }
+                },
+                new Client
+                {
+                    ClientId = "ApiClient",
+                    ClientName = "API Client",
+                    AllowedGrantTypes = GrantTypes.ClientCredentials,
+                    AllowedScopes = new List<string> {"WebApi"},
+                    ClientSecrets = new List<Secret>
+                    {
+                        new Secret("secret".Sha256())
                     }
                 }
             };

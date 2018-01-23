@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  sample.webapi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "44330:80"
+
+  sample.identityserver:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "44329:80"
+
+  db:
+    ports:
+      - "27017:27017"
