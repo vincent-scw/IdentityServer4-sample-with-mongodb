@@ -22,13 +22,7 @@ namespace Sample.IdentityServer.MongoDb
                 return Task.FromResult<Client>(null);
             }
 
-            return Task.FromResult(new Client()
-            {
-                ClientId = client.ClientId,
-                AllowedScopes = client.AllowedScopes,
-                RedirectUris = client.RedirectUris,
-                ClientSecrets = client.ClientSecrets.Select(s => new Secret(s.Sha256())).ToList()
-            });
+            return Task.FromResult((Client) client);
         }
     }
 }

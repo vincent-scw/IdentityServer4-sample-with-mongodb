@@ -38,7 +38,7 @@ namespace Sample.IdentityServer
             var cert = new X509Certificate2(Path.Combine(_environment.ContentRootPath, "idsrv4test.pfx"), "idsrv3test");
 
             services.AddIdentityServer()
-                .AddInMemoryClients(IdServerResources.GetClients()) // Generally speaking, you won't have many clients for authorization/anthentication, use in memory clients is enough
+                .AddInMemoryClients(IdServerResources.GetClients())
                 //.AddClientStore<MongoDbClientStore>()
                 .AddInMemoryIdentityResources(IdServerResources.GetIdentityResources())
                 .AddInMemoryApiResources(IdServerResources.GetApiResources())

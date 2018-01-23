@@ -1,14 +1,11 @@
 ﻿using System.Collections.Generic;
+using IdentityServer4.Models;
 using MongoDB.Bson;
 
 namespace Sample.IdentityServer.MongoDb.Models
 {
-    public class MongoDbClient
+    public class MongoDbClient : Client // Simplely inherits IdentityServer4.Models.Client
     {
         public ObjectId Id { get; set; }
-        public string ClientId { get; set; }
-        public List<string> RedirectUris { get; set; } 
-        public List<string> ClientSecrets { get; set; }
-        public List<string> AllowedScopes { get; set; }
     }
 }

@@ -9,6 +9,13 @@ namespace Sample.IdentityServer.MongoDb
 {
     public class MongoDbResourceStore : IResourceStore
     {
+        private readonly IRepository _repository;
+
+        public MongoDbResourceStore(IRepository repository)
+        {
+            _repository = repository;
+        }
+
         public Task<ApiResource> FindApiResourceAsync(string name)
         {
             throw new NotImplementedException();
