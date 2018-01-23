@@ -7,6 +7,6 @@ This is a sample for IdentityServer4 with Mongodb.
 
 ## Run it
 1. Just simplely build&run the solution with docker (make sure docker-compose project is default).
-2. With IdentityServer4 QuickStart, ·http://localhost:44329/account/login· is for login, and ·http://localhost:44329/account/signup· is for signup.
+2. With IdentityServer4 QuickStart, http://localhost:44329/account/login is for login, and http://localhost:44329/account/signup is for signup.
 
 # Have fun!
