@@ -46,7 +46,8 @@ namespace Sample.IdentityServer
                 .AddProfileService<MongoDbProfileService>()
                 .AddResourceOwnerValidator<MongoDbResourceOwnerPasswordValidator>()
                 //.AddDeveloperSigningCredential()
-                .AddSigningCredential(cert);
+                .AddSigningCredential(cert)
+                .AddTestUsers(IdServerResources.GetTestUsers());
 
             // Add service and create Policy with options 
             services.AddCors(options =>

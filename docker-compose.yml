@@ -13,14 +13,16 @@ services:
 
   sample.webapi:
     image: sample.webapi
-    container_name: sample.webapi
+    container_name: sample_webapi
     build:
       context: ./src/Sample.WebApi
       dockerfile: Dockerfile
+    networks:
+      - backend
 
   sample.identityserver:
     image: sample.identityserver
-    container_name: sample.identityserver
+    container_name: sample_identityserver
     build:
       context: ./src/Sample.IdentityServer
       dockerfile: Dockerfile

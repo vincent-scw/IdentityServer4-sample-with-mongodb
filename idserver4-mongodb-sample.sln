@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.IdentityServer", "sr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.IdentityServer.MongoDb", "src\Sample.IdentityServer.MongoDb\Sample.IdentityServer.MongoDb.csproj", "{E543CB69-178E-418E-BA16-B35E4A1EB975}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.WebApi", "src\Sample.WebApi\Sample.WebApi.csproj", "{10DAF727-3B8B-4D3C-BD16-E389A8D92F9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.WebApi", "src\Sample.WebApi\Sample.WebApi.csproj", "{10DAF727-3B8B-4D3C-BD16-E389A8D92F9C}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9B871E33-AA12-4BAB-99D0-CE2E0B0A9D04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Common", "src\Sample.Common\Sample.Common.csproj", "{FFDC9E5E-6BCB-43E0-8C78-121CDDE5100D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9B871E33-AA12-4BAB-99D0-CE2E0B0A9D04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B871E33-AA12-4BAB-99D0-CE2E0B0A9D04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B871E33-AA12-4BAB-99D0-CE2E0B0A9D04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFDC9E5E-6BCB-43E0-8C78-121CDDE5100D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFDC9E5E-6BCB-43E0-8C78-121CDDE5100D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFDC9E5E-6BCB-43E0-8C78-121CDDE5100D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFDC9E5E-6BCB-43E0-8C78-121CDDE5100D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

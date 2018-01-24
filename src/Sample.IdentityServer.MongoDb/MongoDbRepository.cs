@@ -66,6 +66,10 @@ namespace Sample.IdentityServer.MongoDb
 
         public bool Signup(string username, string plainTextPassword)
         {
+            var u = GetUserByUsername(username);
+            if (u != null)
+                return false;
+
             var user = new MongoDbUser() { Username = username };
             user.HashedPassword = _passwordHasher.HashPassword(user, plainTextPassword);
             _db.GetCollection<MongoDbUser>(UsersCollectionName).InsertOne(user);
